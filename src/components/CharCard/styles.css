@@ -1,0 +1,34 @@
+.CharCard {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin: 10px;
+  border: 1px solid #d1d1d1;
+  color: white;
+  border-radius: 10px;
+
+  transition: all 0.2s ease-out;
+}
+
+.CharCard:hover {
+  transform: scale(1.05);
+}
+
+.CharCard__Image {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.CharCard__Info {
+  text-transform: capitalize;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.Alive {
+  background-image: linear-gradient(rgb(14, 85, 14), rgb(10, 209, 10));
+}
+
+.Dead {
+  background-image: linear-gradient(rgb(134, 7, 7), rgb(207, 10, 10));
+}
