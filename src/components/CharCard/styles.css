@@ -1,11 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
 .CharCard {
   display: flex;
-  flex-direction: column;
-  width: 150px;
+  width: 300px;
   margin: 10px;
   border: 1px solid #d1d1d1;
+  font-family: "Share Tech Mono", monospace;
   color: white;
   border-radius: 10px;
+
+  box-shadow: 14px 12px 17px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 14px 12px 17px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 14px 12px 17px 0px rgba(0, 0, 0, 0.75);
 
   transition: all 0.2s ease-out;
 }
@@ -14,9 +20,23 @@
   transform: scale(1.05);
 }
 
+.Status {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+
+.Status__Info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+
 .CharCard__Image {
-  width: 100%;
-  border-top-right-radius: 10px;
+  width: 150px;
+  height: 150px;
+  border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
 }
 .CharCard__Info {
@@ -25,10 +45,39 @@
   margin: 5px 0;
 }
 
+.CharCard__Info--Name {
+  font-weight: 700px;
+}
+
 .Alive {
-  background-image: linear-gradient(rgb(14, 85, 14), rgb(10, 209, 10));
+  background-color: rgb(10, 209, 10);
+}
+
+.Alive__Text {
+  color: rgb(10, 209, 10);
+  margin: 0 0 0 5px;
+  text-transform: uppercase;
 }
 
 .Dead {
-  background-image: linear-gradient(rgb(134, 7, 7), rgb(207, 10, 10));
+  background-color: rgb(207, 10, 10);
+}
+
+.Dead__Text {
+  color: rgb(207, 10, 10);
+  margin: 0 0 0 5px;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 100%;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  background-color: rgb(51, 51, 51);
 }

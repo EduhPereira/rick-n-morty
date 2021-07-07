@@ -6,9 +6,11 @@ export const Characters = ({ charactersList }) => {
       {charactersList.map((character) => {
         return (
           <CharCard
+            key={character.id}
             name={character.name}
             image={character.image}
             status={character.status}
+            gender={character.gender}
             species={character.species}
           />
         );

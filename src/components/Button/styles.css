@@ -1,0 +1,24 @@
+.Btn {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  margin: 20px;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(10, 209, 10, 0.7);
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #e3e3e3;
+
+  box-shadow: 14px 12px 17px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 14px 12px 17px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 14px 12px 17px 0px rgba(0, 0, 0, 0.75);
+
+  transition: 0.3s ease;
+}
+
+.Btn:hover {
+  background-color: rgba(10, 209, 10, 1);
+  color: white;
+}
